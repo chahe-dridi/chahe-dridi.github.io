@@ -36,6 +36,22 @@
 
     <div id="magic"></div>
 
-    
+    <script>
+        // Instantiate the createParticles object
+        const createParticles = new CreateParticles(scene, font, particleImg, camera, renderer);
+
+        // Function to update text every 1 second
+        function updateTextLoop() {
+            createParticles.updateText(); // Call the method to update the text
+        }
+
+        // Start the loop using setInterval
+        let intervalId = setInterval(updateTextLoop, 1000);
+
+        // Stop the loop after 50 iterations (if needed)
+        setTimeout(() => {
+            clearInterval(intervalId);
+        }, 50000); // 50 iterations * 1000 milliseconds per iteration
+    </script>
 </body>
 </html>
