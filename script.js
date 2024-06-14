@@ -128,7 +128,7 @@ const preload = () => {
 		const currentDate = new Date();
 	
 		// Parse the future date string in the format "YYYY MM DD hour minute second"
-		const futureDateStr = "2024 6 24 8 0 0"; // Replace this with the actual future date string
+		const futureDateStr = "2024 8 30 8 0 0"; // Replace this with the actual future date string
 		const futureDateArr = futureDateStr.split(" ");
 		const futureDate = new Date(
 			parseInt(futureDateArr[0]),  // Year
